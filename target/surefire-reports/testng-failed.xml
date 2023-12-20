@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Nop Commerce Testing ]" guice-stage="DEVELOPMENT" verbose="0">
+  <parameter name="browser" value="chrome"/>
+  <test thread-count="5" name="Regression Tests(failed)" verbose="0">
+    <classes>
+      <class name="Tests.addProductToCreditCardTest">
+        <methods>
+          <include name="userCanAddProductToCreditCard"/>
+          <include name="takeScreenshotsOnFaliure"/>
+          <include name="removeItemsFromCreditCardPage"/>
+          <include name="startDriver"/>
+          <include name="closeDriver"/>
+        </methods>
+      </class> <!-- Tests.addProductToCreditCardTest -->
+      <class name="Tests.checkOutProductAsRegisteredUserTest">
+        <methods>
+          <include name="userCanRegistration"/>
+          <include name="userOpenOrderDetilsPage"/>
+          <include name="openCheckOutProductPage"/>
+          <include name="userCanDownloadOrderDetailsAsPdf"/>
+          <include name="takeScreenshotsOnFaliure"/>
+          <include name="userCanAddProductToCreditCard"/>
+          <include name="startDriver"/>
+          <include name="RegisteredUserCancheckOutProduct"/>
+          <include name="userCanPrintOrderDetails"/>
+          <include name="registeredUserCanLogin"/>
+          <include name="closeDriver"/>
+        </methods>
+      </class> <!-- Tests.checkOutProductAsRegisteredUserTest -->
+      <class name="Tests.userRegistratioinTest">
+        <methods>
+          <include name="userCanRegistration"/>
+          <include name="takeScreenshotsOnFaliure"/>
+          <include name="registeredUserCanLogin"/>
+          <include name="startDriver"/>
+          <include name="closeDriver"/>
+        </methods>
+      </class> <!-- Tests.userRegistratioinTest -->
+      <class name="Tests.addProductsToCompareTest">
+        <methods>
+          <include name="userCanClearCompareProductsForList"/>
+          <include name="takeScreenshotsOnFaliure"/>
+          <include name="startDriver"/>
+          <include name="closeDriver"/>
+        </methods>
+      </class> <!-- Tests.addProductsToCompareTest -->
+      <class name="Tests.checkOutProductAsGuestUserTest">
+        <methods>
+          <include name="openCheckOutProductPage"/>
+          <include name="userCanAddProductToCreditCard"/>
+          <include name="userOpenOrderDetilsPage"/>
+          <include name="takeScreenshotsOnFaliure"/>
+          <include name="userCanPrintOrderDetails"/>
+          <include name="userCanDownloadOrderDetailsAsPdf"/>
+          <include name="startDriver"/>
+          <include name="clickOnCheckOutAsGuestButton"/>
+          <include name="closeDriver"/>
+          <include name="guestUserCancheckOutProduct"/>
+        </methods>
+      </class> <!-- Tests.checkOutProductAsGuestUserTest -->
+      <class name="Tests.addProductReviewTest">
+        <methods>
+          <include name="takeScreenshotsOnFaliure"/>
+          <include name="startDriver"/>
+          <include name="userLogOut"/>
+          <include name="closeDriver"/>
+        </methods>
+      </class> <!-- Tests.addProductReviewTest -->
+      <class name="Tests.AddToWishListTest">
+        <methods>
+          <include name="userCanRemoveProductFromWishList"/>
+          <include name="takeScreenshotsOnFaliure"/>
+          <include name="startDriver"/>
+          <include name="userCanAddProductToWishList"/>
+          <include name="closeDriver"/>
+        </methods>
+      </class> <!-- Tests.AddToWishListTest -->
+      <class name="Tests.emailFriendTest">
+        <methods>
+          <include name="registeredUserCanLogin"/>
+          <include name="userCanSendProductMessageForFriendEmail"/>
+          <include name="takeScreenshotsOnFaliure"/>
+          <include name="startDriver"/>
+          <include name="closeDriver"/>
+          <include name="userCanRegistration"/>
+        </methods>
+      </class> <!-- Tests.emailFriendTest -->
+      <class name="Tests.selectHoverMenuTest">
+        <methods>
+          <include name="UserCanSelectSubCategoryFromMainMenu"/>
+          <include name="takeScreenshotsOnFaliure"/>
+          <include name="startDriver"/>
+          <include name="closeDriver"/>
+        </methods>
+      </class> <!-- Tests.selectHoverMenuTest -->
+    </classes>
+  </test> <!-- Regression Tests(failed) -->
+</suite> <!-- Failed suite [Nop Commerce Testing ] -->

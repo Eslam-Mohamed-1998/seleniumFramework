@@ -1,0 +1,16 @@
+UtilitiesORHelpers\TakeScreenShotSharedMethod.class
+Tests\searchProductTest.class
+Tests\TestesBase.class
+Tests\addProductsToCompareTest.class
+Tests\checkOutProductAsRegisteredUserTest.class
+Tests\myAccountChangePasswordTest.class
+Tests\searchForProductWithAutoSuggest.class
+Tests\AddToWishListTest.class
+Tests\userRegistratioinTest.class
+Tests\selectHoverMenuTest.class
+Tests\SelectCurrencyTest.class
+Tests\emailFriendTest.class
+Tests\contactUsTest.class
+Tests\addProductToCreditCardTest.class
+Tests\addProductReviewTest.class
+Tests\checkOutProductAsGuestUserTest.class

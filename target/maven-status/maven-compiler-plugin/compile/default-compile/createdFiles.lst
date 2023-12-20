@@ -1,0 +1,16 @@
+Pages\contactUSPage.class
+Pages\myAccountPage.class
+Pages\pagesBase.class
+Pages\searchProductDetailsPage.class
+Pages\homePage.class
+Pages\searchPage.class
+Pages\shoppingCartPage.class
+Pages\wishListPage.class
+Pages\checkOutPage.class
+Pages\orderDetailsPage.class
+Pages\loginPage.class
+Pages\productReviewPage.class
+Pages\emailFriendPage.class
+Pages\logOutPage.class
+Pages\comparePage.class
+Pages\userRegistrationPage.class

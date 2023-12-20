@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Nop Commerce Testing " guice-stage="DEVELOPMENT">
+	<parameter name="browser" value="chrome"></parameter>
+	<test thread-count="5" name="Regression Tests" verbose="2" preserve-order="false">
+    <classes>
+      <class name="Tests.userRegistratioinTest"/>
+      <class name="Tests.addProductReviewTest"/>
+      <class name="Tests.addProductsToCompareTest"/>
+      <class name="Tests.addProductToCreditCardTest"/>
+      <class name="Tests.AddToWishListTest"/>
+      <class name="Tests.checkOutProductAsGuestUserTest"/>
+      <class name="Tests.checkOutProductAsRegisteredUserTest"/>
+      <class name="Tests.contactUsTest"/>
+      <class name="Tests.emailFriendTest"/>
+      <class name="Tests.myAccountChangePasswordTest"/>
+      <class name="Tests.searchForProductWithAutoSuggest"/>
+      <class name="Tests.searchProductTest"/>
+      <class name="Tests.SelectCurrencyTest"/>
+      <class name="Tests.selectHoverMenuTest"/>
+      
+    </classes> 
+  </test> <!-- Default test -->
+</suite> <!-- Default suite -->
