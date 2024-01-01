@@ -6,11 +6,10 @@
       <class name="Runner.TestRunner">
         <methods>
           <include name="setUpClass"/>
-          <include name="runScenario" invocation-numbers="1 2"/>
+          <include name="runScenario" invocation-numbers="0 1"/>
           <include name="tearDownClass"/>
           <include name="takeScreenshotsOnFaliure"/>
           <include name="startDriver"/>
-          <include name="closeDriver"/>
         </methods>
       </class> <!-- Runner.TestRunner -->
     </classes>

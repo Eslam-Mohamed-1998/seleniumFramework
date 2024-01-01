@@ -1,3 +1,4 @@
+@disabled
 Feature: User Check Out Product As Guest 
       The User Search For Specific product , Add To Cart , Confirm The Required Data and Print The Invoice
        

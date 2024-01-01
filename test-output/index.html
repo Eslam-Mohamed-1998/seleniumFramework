@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Eslam\AppData\Local\Temp\3\testng-eclipse-643993219\testng-customsuite.xml</span>
+                    <span>C:\Users\Eslam\AppData\Local\Temp\20\testng-eclipse-573410911\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,31 +93,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">2 methods, 2 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
                     </span>
-                    <div class="method-list-content passed suite-Default_suite">
+                    <div class="method-list-content failed suite-Default_suite">
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;User Registration&quot;, &quot;User Registration&quot;)">runScenario("User Registration", "User Registration")</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;User Update Warehouse Data&quot;, &quot;User Update Warehouse Data&quot;)">runScenario("User Update Warehouse Data", "User Update Warehouse Data")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;User Registration&quot;, &quot;User Registration&quot;)">runScenario("User Registration", "User Registration")</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;User Update Warehouse Data&quot;, &quot;User Update Warehouse Data&quot;)">runScenario("User Update Warehouse Data", "User Update Warehouse Data")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;User Check Out Product As Guest&quot;, &quot;User Check Out Product As Guest&quot;)">runScenario("User Check Out Product As Guest", "User Check Out Product As Guest")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -129,48 +124,56 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+          <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">Runner.TestRunner</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;User Registration&quot;, &quot;User Registration&quot;)">
-                  </a> <!-- runScenario("User Registration", "User Registration") -->
+                  <a name="runScenario(&quot;User Update Warehouse Data&quot;, &quot;User Update Warehouse Data&quot;)">
+                  </a> <!-- runScenario("User Update Warehouse Data", "User Update Warehouse Data") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("User Registration", "User Registration")</span>
+                  <span class="parameters">("User Update Warehouse Data", "User Update Warehouse Data")</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at org.testng.Assert.assertTrue(Assert.java:55)
+	at Steps.UserUpdateWarehouseData.the_user_at_saas_login_page(UserUpdateWarehouseData.java:43)
+	at ✽.The User at SAAS Login Page(file:///C:/Users/Eslam/eclipse-workspace/TAF/src/test/java/Features/userUpdateWarehouseData.feature:5)
+
+</div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;User Registration&quot;, &quot;User Registration&quot;)">
-                  </a> <!-- runScenario("User Registration", "User Registration") -->
+                  <a name="runScenario(&quot;User Update Warehouse Data&quot;, &quot;User Update Warehouse Data&quot;)">
+                  </a> <!-- runScenario("User Update Warehouse Data", "User Update Warehouse Data") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("User Registration", "User Registration")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;User Check Out Product As Guest&quot;, &quot;User Check Out Product As Guest&quot;)">
-                  </a> <!-- runScenario("User Check Out Product As Guest", "User Check Out Product As Guest") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("User Check Out Product As Guest", "User Check Out Product As Guest")</span>
+                  <span class="parameters">("User Update Warehouse Data", "User Update Warehouse Data")</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at org.testng.Assert.assertTrue(Assert.java:55)
+	at Steps.UserUpdateWarehouseData.check_that_the_warehouse_data_update_is_completed_depend_on_the_test_condation(UserUpdateWarehouseData.java:91)
+	at ✽.Check That The Warehouse Data Update Is Completed Depend On The Test Condation(file:///C:/Users/Eslam/eclipse-workspace/TAF/src/test/java/Features/userUpdateWarehouseData.feature:12)
+
+</div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
+          </div> <!-- suite-Default_suite-class-failed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Eslam\AppData\Local\Temp\3\testng-eclipse-643993219\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Eslam\AppData\Local\Temp\20\testng-eclipse-573410911\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -227,24 +230,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'Runner.TestRunner')
-data.setCell(0, 3, 7887);
+data.setCell(0, 3, 10603);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'Runner.TestRunner')
-data.setCell(1, 3, 6591);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'runScenario')
-data.setCell(2, 2, 'Runner.TestRunner')
-data.setCell(2, 3, 1710);
+data.setCell(1, 3, 50);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 16 seconds</span>
+              <span class="suite-total-time">Total running time: 10 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -276,41 +275,33 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@4b869331)</span>
-                <span class="method-start">3066 ms</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@118102ee)</span>
+                <span class="method-start">6525 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">runScenario("User Check Out Product As Guest", "User Check Out Product As Guest")</span>
-                <span class="method-start">3850 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("User Update Warehouse Data", "User Update Warehouse Data")</span>
+                <span class="method-start">7487 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">takeScreenshotsOnFaliure([TestResult name=runScenario status=SUCCESS method=AbstractTestNGCucumberTests.runScenario(io.cucumb...)</span>
-                <span class="method-start">11741 ms</span>
+                <span class="method-name">takeScreenshotsOnFaliure([TestResult name=runScenario status=FAILURE method=AbstractTestNGCucumberTests.runScenario(io.cucumb...)</span>
+                <span class="method-start">18098 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
-                <span class="method-name">runScenario("User Registration", "User Registration")</span>
-                <span class="method-start">11743 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("User Update Warehouse Data", "User Update Warehouse Data")</span>
+                <span class="method-start">18475 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">takeScreenshotsOnFaliure([TestResult name=runScenario status=SUCCESS method=AbstractTestNGCucumberTests.runScenario(io.cucumb...)</span>
-                <span class="method-start">18336 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <span class="method-name">runScenario("User Registration", "User Registration")</span>
-                <span class="method-start">18337 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">takeScreenshotsOnFaliure([TestResult name=runScenario status=SUCCESS method=AbstractTestNGCucumberTests.runScenario(io.cucumb...)</span>
-                <span class="method-start">20048 ms</span>
+                <span class="method-name">takeScreenshotsOnFaliure([TestResult name=runScenario status=FAILURE method=AbstractTestNGCucumberTests.runScenario(io.cucumb...)</span>
+                <span class="method-start">18528 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">20050 ms</span>
+                <span class="method-start">18887 ms</span>
               </div> <!-- configuration-class after -->
-              <div class="configuration-suite after">
-                <span class="method-name">closeDriver</span>
-                <span class="method-start">20137 ms</span>
-              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

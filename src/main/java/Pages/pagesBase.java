@@ -1,5 +1,7 @@
 package Pages;
 
+import java.awt.Robot;
+
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -14,6 +16,7 @@ public class pagesBase {
 	public Select select;
 	public Actions action;
 	public Alert alert ;
+	public Robot robot ;
 	public  pagesBase(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);

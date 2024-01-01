@@ -1,3 +1,4 @@
+@disabled
 Feature: User Registration 
        The User Can Register With Successfull Data To NopCommerce Website 
        
