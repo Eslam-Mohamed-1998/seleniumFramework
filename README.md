@@ -1,5 +1,5 @@
 # Selenium FrameWork Description 
-This Project Is Payment Request Task For Kasier Portal
+This Project Is Payment Request Task For Kashier Portal
 
 # Tech Stach 
  -Java
