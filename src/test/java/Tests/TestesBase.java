@@ -81,8 +81,9 @@ public class TestesBase extends AbstractTestNGCucumberTests {
 		}
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+
 		driver.navigate().to("https://portal.staging.payformance.io/en/login");
-		//http://192.168.50.107:31000/auth/Dev/login
+
 	}
 
 
@@ -90,6 +91,7 @@ public class TestesBase extends AbstractTestNGCucumberTests {
 
 
 	// Taking ScreenShot After Failed Methods And But It At screenShots Files 
+
 	@AfterMethod
 	public void takeScreenshotsOnFaliure (ITestResult result) throws IOException 
 	{
@@ -99,6 +101,7 @@ public class TestesBase extends AbstractTestNGCucumberTests {
 			TakeScreenShotSharedMethod.takeScreenShotsAtFailure(driver, result.getName());
 		}
 	}
+		
 
 	//@AfterSuite
 	//public void closeDriver() 
@@ -106,5 +109,10 @@ public class TestesBase extends AbstractTestNGCucumberTests {
 	//	driver.close();
 	//}
 
+
+
+
+	
+	
 
 }

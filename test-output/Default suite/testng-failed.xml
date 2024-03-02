@@ -6,7 +6,11 @@
       <class name="Runner.TestRunner">
         <methods>
           <include name="setUpClass"/>
+<<<<<<< HEAD
           <include name="runScenario" invocation-numbers="0"/>
+=======
+          <include name="runScenario" invocation-numbers="0 1"/>
+>>>>>>> 9932203caa1a09dccedf8bbcc7910da780927a20
           <include name="tearDownClass"/>
           <include name="takeScreenshotsOnFaliure"/>
           <include name="startDriver"/>

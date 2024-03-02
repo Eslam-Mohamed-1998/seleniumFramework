@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
@@ -11,6 +12,20 @@
     <test started-at="2024-03-01T19:07:21 EET" name="Default test" finished-at="2024-03-01T19:08:13 EET" duration-ms="51390">
       <class name="Runner.TestRunner">
         <test-method is-config="true" signature="startDriver(java.lang.String)[pri:0, instance:Runner.TestRunner@3eb738bb]" started-at="2024-03-01T19:07:15 EET" name="startDriver" finished-at="2024-03-01T19:07:21 EET" duration-ms="5802" status="PASS">
+=======
+<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-01-01T16:44:39 EET" name="Default suite" finished-at="2024-01-01T16:44:51 EET" duration-ms="12447">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.TestRunner@48f2bd5b]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2024-01-01T16:44:39 EET" name="Default test" finished-at="2024-01-01T16:44:51 EET" duration-ms="12447">
+      <class name="Runner.TestRunner">
+        <test-method is-config="true" signature="startDriver(java.lang.String)[pri:0, instance:Runner.TestRunner@48f2bd5b]" started-at="2024-01-01T16:44:32 EET" name="startDriver" finished-at="2024-01-01T16:44:39 EET" duration-ms="6498" status="PASS">
+>>>>>>> 9932203caa1a09dccedf8bbcc7910da780927a20
           <params>
             <param index="0">
               <value>
@@ -21,26 +36,43 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
+<<<<<<< HEAD
         <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:Runner.TestRunner@3eb738bb]" started-at="2024-03-01T19:07:21 EET" name="setUpClass" finished-at="2024-03-01T19:07:22 EET" duration-ms="793" status="PASS">
           <params>
             <param index="0">
               <value>
                 <![CDATA[org.testng.TestRunner@4fad6218]]>
+=======
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:Runner.TestRunner@48f2bd5b]" started-at="2024-01-01T16:44:39 EET" name="setUpClass" finished-at="2024-01-01T16:44:40 EET" duration-ms="946" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@118102ee]]>
+>>>>>>> 9932203caa1a09dccedf8bbcc7910da780927a20
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
+<<<<<<< HEAD
         <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.TestRunner@3eb738bb]" started-at="2024-03-01T19:07:22 EET" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-03-01T19:08:12 EET" duration-ms="50254" status="FAIL">
           <params>
             <param index="0">
               <value>
                 <![CDATA["Valid Payment Request"]]>
+=======
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.TestRunner@48f2bd5b]" started-at="2024-01-01T16:44:40 EET" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-01-01T16:44:50 EET" duration-ms="10603" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User Update Warehouse Data"]]>
+>>>>>>> 9932203caa1a09dccedf8bbcc7910da780927a20
               </value>
             </param>
             <param index="1">
               <value>
+<<<<<<< HEAD
                 <![CDATA["User Can Make A Payment Request"]]>
               </value>
             </param>
@@ -93,13 +125,88 @@ at ✽.Accept Terms and Condations and Click On Pay Now button(file:///C:/Users/
             <param index="0">
               <value>
                 <![CDATA[[TestResult name=runScenario status=FAILURE method=AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.TestRunner@3eb738bb] output={null}]]]>
+=======
+                <![CDATA["User Update Warehouse Data"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at Steps.UserUpdateWarehouseData.check_that_the_warehouse_data_update_is_completed_depend_on_the_test_condation(UserUpdateWarehouseData.java:91)
+at ✽.Check That The Warehouse Data Update Is Completed Depend On The Test Condation(file:///C:/Users/Eslam/eclipse-workspace/TAF/src/test/java/Features/userUpdateWarehouseData.feature:12)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="takeScreenshotsOnFaliure(org.testng.ITestResult)[pri:0, instance:Runner.TestRunner@48f2bd5b]" started-at="2024-01-01T16:44:50 EET" name="takeScreenshotsOnFaliure" finished-at="2024-01-01T16:44:51 EET" duration-ms="375" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=runScenario status=FAILURE method=AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.TestRunner@48f2bd5b] output={null}]]]>
+>>>>>>> 9932203caa1a09dccedf8bbcc7910da780927a20
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotsOnFaliure -->
+<<<<<<< HEAD
         <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Runner.TestRunner@3eb738bb]" started-at="2024-03-01T19:08:12 EET" name="tearDownClass" finished-at="2024-03-01T19:08:13 EET" duration-ms="52" status="PASS">
+=======
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.TestRunner@48f2bd5b]" started-at="2024-01-01T16:44:51 EET" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-01-01T16:44:51 EET" duration-ms="50" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User Update Warehouse Data"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User Update Warehouse Data"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at Steps.UserUpdateWarehouseData.the_user_at_saas_login_page(UserUpdateWarehouseData.java:43)
+at ✽.The User at SAAS Login Page(file:///C:/Users/Eslam/eclipse-workspace/TAF/src/test/java/Features/userUpdateWarehouseData.feature:5)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="takeScreenshotsOnFaliure(org.testng.ITestResult)[pri:0, instance:Runner.TestRunner@48f2bd5b]" started-at="2024-01-01T16:44:51 EET" name="takeScreenshotsOnFaliure" finished-at="2024-01-01T16:44:51 EET" duration-ms="358" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=runScenario status=FAILURE method=AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.TestRunner@48f2bd5b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotsOnFaliure -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Runner.TestRunner@48f2bd5b]" started-at="2024-01-01T16:44:51 EET" name="tearDownClass" finished-at="2024-01-01T16:44:51 EET" duration-ms="57" status="PASS">
+>>>>>>> 9932203caa1a09dccedf8bbcc7910da780927a20
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

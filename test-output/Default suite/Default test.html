@@ -55,11 +55,19 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
+<<<<<<< HEAD
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
 <td>Started on:</td><td>Fri Mar 01 19:07:21 EET 2024</td>
 </tr>
 <tr><td>Total time:</td><td>51 seconds (51390 ms)</td>
+=======
+<td>Tests passed/Failed/Skipped:</td><td>0/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Jan 01 16:44:39 EET 2024</td>
+</tr>
+<tr><td>Total time:</td><td>12 seconds (12447 ms)</td>
+>>>>>>> 9932203caa1a09dccedf8bbcc7910da780927a20
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,6 +83,7 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<<<<<<< HEAD
 <td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Valid Payment Request", "User Can Make A Payment Request"</td>
 <td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;iframe[name=&apos;challengeFrame&apos;]&quot;}
   (Session info: chrome=122.0.6261.95)
@@ -128,6 +137,47 @@ Session ID: 1a885d98603eaa00b732f65a5a16bbef
 </pre></div></td>
 <td>50</td>
 <td>Runner.TestRunner@3eb738bb</td></tr>
+=======
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User Update Warehouse Data", "User Update Warehouse Data"</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at org.testng.Assert.assertTrue(Assert.java:55)
+	at Steps.UserUpdateWarehouseData.the_user_at_saas_login_page(UserUpdateWarehouseData.java:43)
+	at ✽.The User at SAAS Login Page(file:///C:/Users/Eslam/eclipse-workspace/TAF/src/test/java/Features/userUpdateWarehouseData.feature:5)
+</pre></div><a href='#' onClick='toggleBox("stack-trace731427771", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace731427771'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at org.testng.Assert.assertTrue(Assert.java:55)
+	at Steps.UserUpdateWarehouseData.the_user_at_saas_login_page(UserUpdateWarehouseData.java:43)
+	at ✽.The User at SAAS Login Page(file:///C:/Users/Eslam/eclipse-workspace/TAF/src/test/java/Features/userUpdateWarehouseData.feature:5)
+</pre></div></td>
+<td>0</td>
+<td>Runner.TestRunner@48f2bd5b</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User Update Warehouse Data", "User Update Warehouse Data"</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at org.testng.Assert.assertTrue(Assert.java:55)
+	at Steps.UserUpdateWarehouseData.check_that_the_warehouse_data_update_is_completed_depend_on_the_test_condation(UserUpdateWarehouseData.java:91)
+	at ✽.Check That The Warehouse Data Update Is Completed Depend On The Test Condation(file:///C:/Users/Eslam/eclipse-workspace/TAF/src/test/java/Features/userUpdateWarehouseData.feature:12)
+</pre></div><a href='#' onClick='toggleBox("stack-trace571928572", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace571928572'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at org.testng.Assert.assertTrue(Assert.java:55)
+	at Steps.UserUpdateWarehouseData.check_that_the_warehouse_data_update_is_completed_depend_on_the_test_condation(UserUpdateWarehouseData.java:91)
+	at ✽.Check That The Warehouse Data Update Is Completed Depend On The Test Condation(file:///C:/Users/Eslam/eclipse-workspace/TAF/src/test/java/Features/userUpdateWarehouseData.feature:12)
+</pre></div></td>
+<td>10</td>
+<td>Runner.TestRunner@48f2bd5b</td></tr>
+>>>>>>> 9932203caa1a09dccedf8bbcc7910da780927a20
 </table><p>
 </body>
 </html>
