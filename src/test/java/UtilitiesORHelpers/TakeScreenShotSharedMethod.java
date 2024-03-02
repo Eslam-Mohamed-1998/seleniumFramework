@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
@@ -19,6 +20,7 @@ public class TakeScreenShotSharedMethod {
 		  Path dest = Paths.get("./screenShots",screenshotName+".png");
 		  Files.createDirectories(dest.getParent()); 
 		  FileOutputStream out = new FileOutputStream(dest.toString());
+		 // driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
 		  out.write(((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES) );
 		  out.close();
 		 

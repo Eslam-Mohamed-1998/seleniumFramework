@@ -11,7 +11,8 @@
  
   
   <dependencies>
-    <dependency>
+ <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+<dependency>
     <groupId>org.seleniumhq.selenium</groupId>
     <artifactId>selenium-java</artifactId>
     <version>3.9.1</version>
@@ -102,8 +103,77 @@
     <version>27.0.0</version>
 </dependency>
 
+<dependency>
+<groupId>io.rest-assured</groupId>
+<artifactId>json-path</artifactId>
+<version>4.2.0</version>
+<scope>test</scope>
+</dependency>
+
+
+<dependency>
+<groupId>io.rest-assured</groupId>
+<artifactId>xml-path</artifactId>
+<version>4.2.0</version>
+<scope>test</scope>
+</dependency>
+
+
+<dependency>
+<groupId>io.rest-assured</groupId>
+<artifactId>json-schema-validator</artifactId>
+<version>4.2.0</version>
+<scope>test</scope>
+</dependency>
+
+
+<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-devtools -->
+<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-devtools -->
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-devtools</artifactId>
+    <version>4.0.0-alpha-7</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/tech.grasshopper/extentreports-cucumber7-adapter -->
+<dependency>
+    <groupId>tech.grasshopper</groupId>
+    <artifactId>extentreports-cucumber7-adapter</artifactId>
+    <version>1.14.0</version>
+</dependency>
+
+
+<!--<dependency>
+
+<groupId>org.seleniumhq.selenium</groupId>
+<artifactId>selenium-chrome-driver</artifactId>
+<version>4.16.1</version>
+</dependency>
+
+<dependency>
+<groupId>org.seleniumhq.selenium</groupId>
+<artifactId>selenium-firefox-driver</artifactId>
+<version>4.16.1</version>
+</dependency>
+
+<dependency>
+<groupId>io.github.bonigarcia</groupId>
+<artifactId>webdrivermanager</artifactId>
+<version>5.6.2</version>
+</dependency>-->
+
+<!-- https://mvnrepository.com/artifact/com.codeborne/phantomjsdriver -->
+<dependency>
+    <groupId>com.codeborne</groupId>
+    <artifactId>phantomjsdriver</artifactId>
+    <version>1.5.0</version>
+</dependency>
+
+
   </dependencies>
-  
+ 
+ 
+ 
   
   
   <profiles>
